@@ -44,7 +44,7 @@ class _LoginPageState extends State<LoginPage> {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/images/login_image.png",
+                    "assets/images/login_page.png",
                     fit: BoxFit.cover,
                   ),
                   SizedBox(
@@ -88,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                           validator: (value) {
                             if (value!.isEmpty) {
                               return "Password cannot be empty";
-                            } else if (value!.length < 6) {
+                            } else if (value.length < 6) {
                               return "Password must have 6 characters";
                             }
                             return null;
